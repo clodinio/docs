@@ -1,126 +1,99 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
-  "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+  "name": "Qualtranscribe",
+  "logo": {
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/components",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "Agent ready",
-            "pages": [
-              "agent-ready/prompt",
-              "agent-ready/visibility",
-              "agent-ready/contextual",
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
+  "colors": {
+    "primary": "#ECB10D",
+    "light": "#F2C24C",
+    "dark": "#D9A00C",
+    "background": {
+      "light": "#F0EDE8",
+      "dark": "#1C1917"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Go to App",
+      "url": "https://app.qualtranscribe.com"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Get Started",
+    "url": "https://app.qualtranscribe.com"
+  },
+  "anchors": [
+    {
+      "name": "Support",
+      "icon": "envelope",
+      "url": "mailto:support@qualtranscribe.com"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": ["introduction", "quickstart", "faq"]
+    },
+    {
+      "group": "Transcription",
+      "pages": [
+        "transcription/overview",
+        "transcription/human-transcription",
+        "transcription/instant-draft",
+        "transcription/supported-formats",
+        "transcription/turnaround-times",
+        "transcription/accuracy"
+      ]
+    },
+    {
+      "group": "Uploading Files",
+      "pages": [
+        "uploading/from-your-device",
+        "uploading/google-drive",
+        "uploading/dropbox",
+        "uploading/onedrive",
+        "uploading/box",
+        "uploading/zoom",
+        "uploading/webex"
+      ]
+    },
+    {
+      "group": "WorkHub",
+      "pages": [
+        "workhub/overview",
+        "workhub/folders",
+        "workhub/managing-files",
+        "workhub/invoicing"
+      ]
+    },
+    {
+      "group": "Smart Insights",
+      "pages": [
+        "insights/overview",
+        "insights/reading-your-transcript"
+      ]
+    },
+    {
+      "group": "Orders & Billing",
+      "pages": [
+        "billing/placing-an-order",
+        "billing/pricing",
+        "billing/payment-methods",
+        "billing/order-history"
+      ]
+    },
+    {
+      "group": "Account",
+      "pages": [
+        "account/settings",
+        "account/security",
+        "account/hipaa"
       ]
     }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+  ],
+  "footerSocials": {
+    "website": "https://qualtranscribe.com"
   }
 }
