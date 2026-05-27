@@ -1,5 +1,6 @@
 {
   "name": "Qualtranscribe",
+  "theme": "mint",
   "logo": {
     "light": "/logo/light.png",
     "dark": "/logo/dark.png"
