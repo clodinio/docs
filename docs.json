@@ -9,11 +9,7 @@
   "colors": {
     "primary": "#ECB10D",
     "light": "#F2C24C",
-    "dark": "#D9A00C",
-    "background": {
-      "light": "#F0EDE8",
-      "dark": "#1C1917"
-    }
+    "dark": "#D9A00C"
   },
   "topbarLinks": [
     {
@@ -32,68 +28,75 @@
       "url": "mailto:support@qualtranscribe.com"
     }
   ],
-  "navigation": [
-    {
-      "group": "Getting Started",
-      "pages": ["introduction", "quickstart", "faq"]
-    },
-    {
-      "group": "Transcription",
-      "pages": [
-        "transcription/overview",
-        "transcription/human-transcription",
-        "transcription/instant-draft",
-        "transcription/supported-formats",
-        "transcription/turnaround-times",
-        "transcription/accuracy"
-      ]
-    },
-    {
-      "group": "Uploading Files",
-      "pages": [
-        "uploading/from-your-device",
-        "uploading/google-drive",
-        "uploading/dropbox",
-        "uploading/onedrive",
-        "uploading/box",
-        "uploading/zoom",
-        "uploading/webex"
-      ]
-    },
-    {
-      "group": "WorkHub",
-      "pages": [
-        "workhub/overview",
-        "workhub/folders",
-        "workhub/managing-files",
-        "workhub/invoicing"
-      ]
-    },
-    {
-      "group": "Smart Insights",
-      "pages": [
-        "insights/overview",
-        "insights/reading-your-transcript"
-      ]
-    },
-    {
-      "group": "Orders & Billing",
-      "pages": [
-        "billing/placing-an-order",
-        "billing/pricing",
-        "billing/payment-methods",
-        "billing/order-history"
-      ]
-    },
-    {
-      "group": "Account",
-      "pages": [
-        "account/settings",
-        "account/security",
-        "account/hipaa"
-      ]
-    }
-  ],
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": ["introduction", "quickstart", "faq"]
+          },
+          {
+            "group": "Transcription",
+            "pages": [
+              "transcription/overview",
+              "transcription/human-transcription",
+              "transcription/instant-draft",
+              "transcription/supported-formats",
+              "transcription/turnaround-times",
+              "transcription/accuracy"
+            ]
+          },
+          {
+            "group": "Uploading Files",
+            "pages": [
+              "uploading/from-your-device",
+              "uploading/google-drive",
+              "uploading/dropbox",
+              "uploading/onedrive",
+              "uploading/box",
+              "uploading/zoom",
+              "uploading/webex"
+            ]
+          },
+          {
+            "group": "WorkHub",
+            "pages": [
+              "workhub/overview",
+              "workhub/folders",
+              "workhub/managing-files",
+              "workhub/invoicing"
+            ]
+          },
+          {
+            "group": "Smart Insights",
+            "pages": [
+              "insights/overview",
+              "insights/reading-your-transcript"
+            ]
+          },
+          {
+            "group": "Orders & Billing",
+            "pages": [
+              "billing/placing-an-order",
+              "billing/pricing",
+              "billing/payment-methods",
+              "billing/order-history"
+            ]
+          },
+          {
+            "group": "Account",
+            "pages": [
+              "account/settings",
+              "account/security",
+              "account/hipaa"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "footerSocials": {
     "website": "https://qualtranscribe.com"
   }
