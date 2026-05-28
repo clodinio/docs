@@ -1,93 +1,200 @@
 ---
-title: "FAQ"
-description: "Answers to the most common questions about Qualtranscribe."
+title: "Frequently Asked Questions"
+description: "Common questions about Qualtranscribe transcription services, pricing, security, compliance, and platform features."
 ---
 
 # Frequently Asked Questions
 
-## Transcription
+## Services and Capabilities
 
 <AccordionGroup>
-  <Accordion title="What types of transcription do you offer?">
-    We deliver accurate, secure, and professionally formatted transcripts for research, legal, and professional use, including interviews, focus groups, depositions, lectures, usability sessions, and multilingual recordings. Whether your project is IRB-approved, HIPAA-sensitive, legally sensitive, or commercially confidential, we tailor our workflow to fit.
+  <Accordion title="What types of recordings do you transcribe?">
+    We transcribe a wide range of audio and video recordings across research, legal, healthcare, and enterprise environments. This includes in-depth interviews, focus groups, depositions, hearings, witness statements, clinical trials, patient interviews, advisory board sessions, usability tests, corporate meetings, earnings calls, oral history recordings, conference proceedings, field interviews, and online panel discussions.
 
-    We offer two services:
-
-    - **Human Transcription:** completed by professional transcriptionists delivering the highest accuracy for research, legal, and professional use
-    - **Instant Draft:** AI-powered transcription delivered in minutes for quick turnarounds and early-stage review and analysis
+    If your recording involves spoken content, we can transcribe it.
   </Accordion>
 
-  <Accordion title="Can you handle multiple speakers or overlapping dialogue?">
-    Yes. Our transcriptionists are trained to handle complex recordings with crosstalk, interruptions, and layered conversation, whether for focus groups, roundtables, depositions, or multi-party legal proceedings. The Speaker Labels add-on clearly identifies each participant throughout the transcript.
+  <Accordion title="What is the difference between Human Transcription and Instant Draft?">
+    **Human Transcription** is completed by a trained professional transcriptionist from start to finish. It delivers 99%\+ accuracy and is the appropriate choice for legal proceedings, clinical research, IRB-approved studies, focus groups, and any project where precision is not negotiable. Standard turnaround is 3-5 business days.
+
+    **Instant Draft** uses AI-powered speech recognition to return a transcript within minutes of upload. It covers 99\+ languages and works well for preliminary review, high-volume workflows, and projects where speed matters more than verbatim accuracy. Instant Draft transcripts are not reviewed by a human transcriptionist unless a human review upgrade is separately purchased.
+  </Accordion>
+
+  <Accordion title="Can you handle recordings with multiple speakers or overlapping dialogue?">
+    Yes. Our transcriptionists are trained to handle complex recordings with crosstalk, interruptions, and layered conversation, whether for focus groups, roundtables, depositions, or multi-party legal proceedings. The Speaker Labels add-on identifies each participant clearly throughout the transcript.
+
+    For recordings with heavy overlapping speech, we recommend including order notes to help your transcriptionist navigate the session. Very dense crosstalk may result in \[inaudible\] notations at specific points, which we will flag for your review.
   </Accordion>
 
   <Accordion title="Do you offer transcription in languages other than English?">
-    Yes. We support multilingual transcription and translation across 20\+ languages for Human Transcription, including Spanish, French, German, Italian, Portuguese, Arabic, Mandarin, Japanese, Swahili, Amharic, Turkish, and Russian. Instant Draft supports transcription in 99\+ languages. If you have non-English content, select your language during the order process or contact us to discuss your requirements.
+    Yes. Human Transcription is available in 20\+ languages including Spanish, French, German, Italian, Portuguese, Arabic, Mandarin, Japanese, Swahili, Amharic, Turkish, Russian, and more. Instant Draft covers 99\+ languages and dialects.
+
+    For multilingual recordings or projects requiring translation to English, we offer bilingual direct transcription (audio transcribed directly to English by a native bilingual professional) at \$6.00 per audio minute. We also provide a two-step option that produces both a source-language transcript and an English translation.
+  </Accordion>
+
+  <Accordion title="Do you transcribe clinical interviews or patient focus groups?">
+    Yes. We regularly transcribe health-related sessions including provider-patient interviews, clinical trial discussions, advisory board recordings, patient-reported outcome sessions, MSL conversations, and behavioral health studies. Our transcriptionists are trained in medical terminology and privacy protocols. HIPAA-compliant workflows with Business Associate Agreements are available for projects involving Protected Health Information.
+  </Accordion>
+
+  <Accordion title="Do you transcribe legal proceedings such as depositions and hearings?">
+    Yes. We transcribe depositions, witness interviews, arbitration sessions, mediation records, court proceedings, affidavits, insurance statements, and attorney-client interviews. Our transcriptionists are trained in legal terminology and formatting conventions. Verbatim transcription is standard for legal work, and we support multi-language legal proceedings across 20\+ languages.
+  </Accordion>
+
+  <Accordion title="How accurate are your transcripts?">
+    We maintain a 99%\+ accuracy standard for clearly recorded audio. "Clearly recorded" means distinguishable speakers, minimal background noise, adequate recording volume, and clear speech.
+
+    Accuracy may be reduced by poor audio quality, heavy overlapping speech, strong regional accents, or highly specialized terminology. We flag unclear sections as \[inaudible\] rather than guessing. For projects with challenging audio conditions, including order notes with speaker names, subject matter context, or a terminology glossary improves outcomes significantly.
+
+    An independent study by the CISPA Helmholtz Center for Information Security confirmed that human transcription services, including Qualtranscribe, consistently outperform AI tools on technical terminology. Every AI service in the study transcribed "hashes" as "ashes." Qualtranscribe transcribed it correctly 100% of the time.
+  </Accordion>
+
+  <Accordion title="Isn't AI transcription faster and cheaper? Why not use it for everything?">
+    AI transcription is fast and cost-effective for many use cases. Instant Draft is available for exactly those situations.
+
+    However, AI tools have consistent failure modes that matter in professional environments: they struggle with domain-specific terminology, heavy accents, multi-speaker recordings, poor audio conditions, and emotionally or contextually nuanced speech. For legal proceedings, clinical research, IRB-approved human subjects studies, and any project where the transcript will be cited or relied upon, human transcription is the appropriate choice.
+
+    Many clients use both: Instant Draft for volume and preliminary review, Human Transcription for the recordings that anchor their analysis or documentation.
   </Accordion>
 
   <Accordion title="Do you use AI in your transcription process?">
-    All core transcriptions at Qualtranscribe is completed by trained human transcriptionists, which is critical for research reliability, legal accuracy, and secure data handling. AI-generated transcripts are available via our Instant Draft service if you need rapid turnaround or an early review pass. Both services deliver professionally formatted transcripts with speaker labels and timestamps.
-  </Accordion>
+    Standard Human Transcription orders are completed entirely by trained human professionals. No automated speech recognition tools access your audio for human transcription orders.
 
-  <Accordion title="What's the difference between Clean Verbatim and Full Verbatim?">
-    **Clean Verbatim** omits unnecessary utterances (um, uh, false starts, filler words) to produce a polished, readable transcript while preserving full meaning and context.
+    AI is used in two optional, clearly labeled features: **Instant Draft** (AI-powered speech recognition via AssemblyAI) and **Smart Insights** (AI-powered transcript analysis via Anthropic Claude, accessed through AWS Bedrock). Both are opt-in. Clients who require that no AI tools access their content should select Human Transcription and not use these features.
 
-    **Full Verbatim** captures and includes every utterance — filler words, sighs, stutters, repetitions, and non-verbal sounds. Recommended for conversation analysis and discourse analysis.
+    Neither AssemblyAI nor Anthropic uses submitted content for model training.
   </Accordion>
 </AccordionGroup>
 
-## Privacy & Security
+## Formatting and Add-ons
 
 <AccordionGroup>
-  <Accordion title="How do you protect my data? And who has access to it?">
-    We use encrypted file transfer, secure storage, and strict access controls. Only the assigned transcriptionist(s) and project manager handling your specific project have access to your files. We never share or reuse any client content.
+  <Accordion title="What is the difference between Clean Verbatim and Full Verbatim?">
+    **Clean Verbatim** removes filler words (um, uh, like, you know), false starts, and repetitions while preserving the full meaning and context of what was said. This is the default style and appropriate for most research, legal, and professional uses.
+
+    **Full Verbatim** captures every utterance exactly as spoken, including all filler words, sighs, stutters, laughter, and non-verbal sounds. It is required for discourse analysis, conversation analysis, psychotherapy research, and legal proceedings where the complete speech record matters.
+
+    A hybrid option is available: filler words removed, but significant non-verbal cues (laughter, long pauses, emotional breaks) retained. This works well for focus groups and personal interviews where tone is analytically relevant.
   </Accordion>
 
-  <Accordion title="How do you handle Personally Identifiable Information (PII)?">
-    All recordings and transcripts are handled as strictly confidential. PII is never shared, reused, or retained beyond the agreed retention period. We offer anonymisation and redaction services upon request, and all transcriptionists operate under signed NDAs.
+  <Accordion title="Do you offer speaker identification?">
+    Yes. The Speaker Labels add-on is available for Human Transcription orders. Speakers can be labeled by role (Interviewer, Respondent, Moderator, Participant 1) or by name if you provide a speaker guide in your order notes. Consistent speaker identification is maintained throughout the transcript.
+
+    For Instant Draft orders, automatic speaker detection is applied where the audio permits.
   </Accordion>
 
-  <Accordion title="Are your services HIPAA-compliant?">
-    Yes. We offer HIPAA-compliant workflows for projects involving Protected Health Information (PHI), including encrypted file handling, secure storage, and strict access controls. We provide signed Business Associate Agreements (BAAs) upon request. Contact [support@qualtranscribe.com](mailto:support@qualtranscribe.com) to request a BAA or discuss your compliance requirements.
+  <Accordion title="Can you format transcripts for NVivo, ATLAS.ti, or MAXQDA?">
+    Yes. We offer three NVivo-compatible formats: Synchronized (timestamps synced with audio for media playback), Headings (organized by interview questions for auto-coding), and Basic (clean text import). Similar formatting is available for ATLAS.ti, MAXQDA, and Dedoose.
+
+    Specify your preferred QDA software when placing your order and we will format accordingly. Smart Insights also generates a Coding CSV ready for direct import into qualitative analysis tools.
+  </Accordion>
+
+  <Accordion title="Can you redact or anonymize transcripts?">
+    Yes. We offer anonymization and redaction services upon request. This includes removing participant names, locations, organizational identifiers, and other Personally Identifiable Information. Specify your redaction requirements in your order notes. De-identification, pseudonymization (replacing identifiers with codes while retaining a mapping key), and full anonymization are all available.
+  </Accordion>
+
+  <Accordion title="Do you offer branded or white-label transcript delivery?">
+    Yes. If you are an agency or institutional client, we can deliver transcripts with your organization's branding or in a neutral format for client-facing use. Contact support to arrange this for your account.
   </Accordion>
 </AccordionGroup>
 
-## Billing & Institutional Clients
+## Pricing and Billing
 
 <AccordionGroup>
-  <Accordion title="What payment methods do you accept?">
-    We accept major credit and debit cards (processed via Stripe), ACH bank transfers, institutional purchase orders, and direct invoicing. For international clients, we also support wire transfers and select digital payment platforms.
+  <Accordion title="How is transcription pricing calculated?">
+    Human Transcription is priced per audio minute. Current rates:
+
+    - In-depth interviews: \$1.00 per audio minute
+    - Focus groups: \$1.50 per audio minute
+    - Bilingual direct transcription (audio to English): \$6.00 per audio minute
+
+    Pricing is based on audio length, not word count or page count. Add-ons (timestamps, speaker labels, full verbatim, translation), expedited delivery, and rush delivery are priced separately and shown at checkout before you confirm your order.
+
+    Instant Draft is included in subscription plans. See [Pricing](/billing/pricing) for full details.
+  </Accordion>
+
+  <Accordion title="Do you offer discounts for students, academic researchers, or bulk orders?">
+    Yes. We offer a 5-10% academic discount for students, faculty, and grant-funded research projects. Volume-based pricing is available for recurring or high-volume clients. Contact support with your project details to discuss rates.
   </Accordion>
 
   <Accordion title="Can you bill my university or department directly?">
-    Yes. We accept institutional purchase orders and can provide itemised invoices. We are able to bill your university or department directly if preferred. Contact us with your administrative requirements and we will coordinate accordingly.
+    Yes. We accept institutional purchase orders and provide itemized invoices, W-9 forms, and service summaries to support procurement workflows. We have completed vendor onboarding for multiple universities and are familiar with institutional procurement processes. Contact [support@qualtranscribe.com](mailto:support@qualtranscribe.com) to arrange direct billing.
   </Accordion>
 
-  <Accordion title="Can I get a quote for a grant proposal or funding application?">
-    Yes. We are happy to provide a formal quote or cost estimate tailored to your project scope. Share your anticipated audio volume, timeline, and formatting needs and we will prepare a document you can include with your proposal. Email [support@qualtranscribe.com](mailto:support@qualtranscribe.com).
+  <Accordion title="Can I get a formal quote for a grant proposal or funding application?">
+    Yes. We provide formal quotes and cost estimates tailored to your project scope, including itemized breakdowns suitable for grant budget documentation. Share your anticipated audio volume, language requirements, timeline, and formatting needs and we will prepare a quote you can include with your proposal.
+  </Accordion>
+
+  <Accordion title="What payment methods do you accept?">
+    We accept major credit and debit cards processed via Stripe, ACH bank transfers, institutional purchase orders, and direct invoicing. International clients can also pay by wire transfer. Approved institutional accounts operate on Net 30 payment terms. Contact us to discuss payment arrangements for your organization.
+  </Accordion>
+
+  <Accordion title="What is your refund and cancellation policy?">
+    Orders cancelled within 24 hours of placement before work begins receive a full refund minus payment processing fees. Once work has commenced, full refunds are not available, though partial refunds are considered case-by-case.
+
+    Human Transcription orders include free revisions for confirmed transcription errors, submitted within 7 business days of delivery. Late delivery due to our error results in a 15% discount or priority expedited service on a future order at no charge. See [Refunds and Cancellations](/billing/refunds) for full terms.
   </Accordion>
 </AccordionGroup>
 
-## Using the App
+## Privacy, Security, and Compliance
+
+<AccordionGroup>
+  <Accordion title="How do you protect my files and data?">
+    All files are transferred via encrypted channels (TLS 1.3) and stored using 256-bit AES encryption on Wasabi's regionally isolated infrastructure. US accounts are stored in Wasabi's us-east-1 region (North Virginia). EU accounts are stored in Wasabi's eu-central-2 region (Frankfurt, Germany).
+
+    Access to files is limited to the assigned transcriptionist and project manager for the duration of the project. All access is logged. Files are permanently deleted 30 days after project delivery, with earlier deletion available on request. A Certificate of Destruction is available upon request.
+  </Accordion>
+
+  <Accordion title="How do you handle Personally Identifiable Information (PII)?">
+    All recordings and transcripts are treated as strictly confidential. PII is never shared, reused, or retained beyond the agreed retention period. We offer anonymization and redaction services upon request, and all transcriptionists operate under signed Non-Disclosure Agreements. We follow the US Department of Labor's PII protection guidance, adapted to our operational practices.
+  </Accordion>
+
+  <Accordion title="Are your services HIPAA-compliant?">
+    Yes. We offer HIPAA-compliant workflows for projects involving Protected Health Information, including encrypted file handling, secure storage, multi-factor authentication, role-based access controls, and comprehensive audit logging.
+
+    Business Associate Agreements are available and must be executed before any PHI is shared. PHI is stored on HIPAA-compliant infrastructure in Wasabi's us-east-1 region and never leaves the United States for storage or processing.
+
+    For clients who require US-only transcription with no international data transfer, specify this when placing your order.
+
+    Contact [support@qualtranscribe.com](mailto:support@qualtranscribe.com) to request a BAA or discuss HIPAA requirements for your project.
+  </Accordion>
+
+  <Accordion title="Are your services GDPR-compliant?">
+    Yes. Qualtranscribe is GDPR-compliant. EU client data is stored exclusively in Wasabi's eu-central-2 region (Frankfurt, Germany). AI processing for EU clients (Instant Draft via AssemblyAI and Smart Insights via AWS Bedrock) is handled within EU infrastructure. Data Processing Agreements are available upon request. Contact [support@qualtranscribe.com](mailto:support@qualtranscribe.com) with "GDPR Request" in the subject line.
+  </Accordion>
+
+  <Accordion title="Do you sign NDAs or confidentiality agreements?">
+    Yes. We sign NDAs upon request and can provide our standard confidentiality agreement if your institution does not have its own. All transcriptionists and contractors already operate under signed NDAs as a baseline requirement.
+  </Accordion>
+
+  <Accordion title="Do you support transcription for IRB-approved studies?">
+    Yes. We are familiar with IRB protocols and can tailor workflows to meet your study's confidentiality, consent, and data handling requirements. We provide documentation of our security practices, BAA arrangements, data deletion policies, and no-AI-training commitment for inclusion in IRB submissions. Contact us before your IRB submission if you need documentation of our data governance practices.
+  </Accordion>
+
+  <Accordion title="Do you use my recordings to train AI models?">
+    No. Qualtranscribe does not use client recordings or transcripts to train AI models, across all account types and all service tiers. AssemblyAI (used for Instant Draft) and Anthropic via AWS Bedrock (used for Smart Insights) also do not use submitted content for model training. This applies to all plans including the Free tier.
+  </Accordion>
+
+  <Accordion title="Do you support transcription for IRB-approved studies?">
+    Yes. We are familiar with IRB protocols and can tailor our workflow to meet your study's confidentiality, consent, and data handling requirements. Our security documentation, BAA arrangements, data deletion policies, and no-AI-training commitment are available for IRB submissions. We have worked with researchers at Johns Hopkins, UCSF, Texas A&M, CUNY, Washington University in St. Louis, and many other institutions on IRB-covered projects.
+  </Accordion>
+</AccordionGroup>
+
+## Using the Platform
 
 <AccordionGroup>
   <Accordion title="Do I need to install anything?">
-    No. Qualtranscribe is entirely browser-based. Sign up at [app.qualtranscribe.com](https://app.qualtranscribe.com) and start uploading files immediately.
+    No. Qualtranscribe is entirely browser-based. Sign up at app.qualtranscribe.com and begin uploading files immediately from any device.
   </Accordion>
 
-  <Accordion title="What file formats do you support?">
-    We support the most common audio and video formats including MP3, MP4, WAV, M4A, and WebM. See the full [Supported File Formats](/transcription/supported-formats) page for details.
-  </Accordion>
-
-  <Accordion title="Can I import files from cloud storage?">
-    Yes. You can import directly from Google Drive, Dropbox, OneDrive, Box, Zoom, and Webex. Connect your account during the upload flow and browse your files directly.
+  <Accordion title="What file formats do you accept?">
+    We accept MP3, MP4, WAV, M4A, and WebM. Files can be uploaded directly from your device or imported from Google Drive, Dropbox, OneDrive, Box, Zoom, and Webex. For files larger than 2GB, contact support before uploading. See [Supported File Formats](/transcription/supported-formats) for full details.
   </Accordion>
 
   <Accordion title="What is WorkHub?">
-    WorkHub is a secure, folder-based workspace for postpaid and institutional clients. It allows you to organise recordings and transcripts into projects and receive invoices rather than paying per upload. Contact [support@qualtranscribe.com](mailto:support@qualtranscribe.com) to set up a WorkHub account.
+    WorkHub is a secure, folder-based workspace for teams, institutions, and organizations with ongoing transcription needs. It allows you to organize recordings and transcripts into projects, manage team access, and operate on invoiced billing rather than per-order payments. WorkHub is available to postpaid and institutional accounts. Contact [support@qualtranscribe.com](mailto:support@qualtranscribe.com) to set up a WorkHub account.
   </Accordion>
 
   <Accordion title="What is Smart Insights?">
-    Smart Insights is Qualtranscribe's built-in transcript viewer. Once your transcription is complete, you can open and read your transcript directly in the browser — with speaker labels, timestamps, and speaker turns clearly formatted. No downloading required.
+    Smart Insights is Qualtranscribe's AI-powered analysis layer for Instant Draft transcripts. It generates thematic analysis, speaker pattern analysis, witness statement summaries, timeline extraction, contradiction flags, emotion mapping, research memos, a quotes bank, participant profiles, a Coding CSV for NVivo or ATLAS.ti, and a deck outline for reporting.
   </Accordion>
 </AccordionGroup>
