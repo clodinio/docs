@@ -1,11 +1,7 @@
 ---
-title: Anonymization and Redaction
-description: How Qualtranscribe handles anonymization, pseudonymization, redaction, and de-identification of transcripts for research, healthcare, and legal use.
+title: "Anonymization and Redaction"
+description: "Qualtranscribe provides anonymization, pseudonymization, and redaction services for transcripts containing Personally Identifiable Information (PII) or Protected Health Information (PHI). These services are available as add-ons to any Human Transcription order."
 ---
-
-# Anonymization and Redaction
-
-Qualtranscribe provides anonymization, pseudonymization, and redaction services for transcripts containing Personally Identifiable Information (PII) or Protected Health Information (PHI). These services are available as add-ons to any Human Transcription order.
 
 ## The Three Approaches
 
@@ -59,3 +55,29 @@ For healthcare research, HIPAA recognizes two approaches to de-identification:
 **Expert Determination:** A qualified expert applies statistical or scientific methods to confirm that re-identification risk is very small.
 
 Qualtranscribe applies Safe Harbor de-identification by default for healthcare transcripts unless you specify otherwise. For expert determination, consult your institution's privacy officer.
+
+## HIPAA Redaction Conventions
+
+For clinical and healthcare transcripts, we follow a structured redaction format that preserves readability while removing all identifiable information. Drug names, treatment names, and medical terminology are retained.
+
+**Format:** `[PHI: descriptor timestamp]`
+
+**What gets redacted and how:**
+
+| Identifier | Replacement Format |
+| --- | --- |
+| Names of people | `[name]`, or specific where relevant: `[child's name]`, `[sibling]`, `[parent]` |
+| Cities, states, countries | `[city]`, `[state]`, `[country]` |
+| Businesses or places of work | `[local business]`, `[restaurant]`, `[shopping center]` |
+| Hospitals or clinics | `[hospital]`, `[clinic]` |
+| Doctors and clinicians | `[doctor]`, `[therapist]`, `[nurse]` |
+
+Drug names, treatment names, and clinical terminology are **not** redacted.
+
+**Example:**
+
+Original: _"So my daughter Sarah was seen at Boston Children's last Tuesday by Dr. Nguyen, who referred her to the clinic on Commonwealth Ave."_
+
+Redacted: _"So my \[PHI: child's name 00:05:15\] was seen at \[PHI: hospital 00:05:18\] last Tuesday by \[PHI: doctor 00:05:21\], who referred her to the \[PHI: clinic 00:05:25\] on \[PHI: street 00:05:27\]."_
+
+Specify this redaction format in your order notes if required for your project.
