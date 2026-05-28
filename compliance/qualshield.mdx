@@ -1,1 +1,108 @@
+---
+title: QualShield Security Framework
+description: QualShield is Qualtranscribe's end-to-end security and confidentiality framework covering encryption, access controls, NDAs, HIPAA, GDPR, and PII protection.
+---
 
+# QualShield
+
+QualShield is Qualtranscribe's security and confidentiality framework. It governs how every recording, transcript, and piece of participant data is handled from the moment it enters our system to the moment it is deleted. It is not a product tier or an add-on. It applies to every account and every order.
+
+## Encryption
+
+**At rest:** All files and data are encrypted using 256-bit AES. This applies to audio recordings, completed transcripts, account data, and all associated metadata.
+
+**In transit:** All data transmission uses TLS 1.3. Files transferred between your device and our servers, between our servers and transcriptionists, and between our infrastructure and AI subprocessors are encrypted end-to-end.
+
+**Workstations:** All staff and contractors are required to use encrypted, password-protected devices. Automatic screen locks and full-disk encryption are mandatory.
+
+## Access Controls
+
+Access to client files is role-based and project-specific. A transcriptionist assigned to your order has access to your files for the duration of that project only. Access is automatically revoked upon project completion. No one at Qualtranscribe has standing access to client files outside of active project assignments.
+
+Comprehensive audit logs capture every access event: who accessed what file, when, and what action was taken. These logs are maintained for compliance and breach investigation purposes.
+
+## Non-Disclosure Agreements
+
+Every transcriptionist, translator, quality reviewer, and contractor who handles client content signs a Non-Disclosure Agreement before accessing any files. NDAs are a baseline requirement, not an optional add-on.
+
+Clients may also request that we sign their organization's NDA, or use our standard confidentiality agreement if preferred.
+
+## PII Protection
+
+Our approach to Personally Identifiable Information follows the guidance established for the US Department of Labor, adapted to our operational practices. All staff receive training on:
+
+- Identifying and protecting PII and PHI in recordings and transcripts
+- Legal and regulatory requirements for secure data handling
+- Responsibilities for maintaining confidentiality
+- The potential consequences of data breaches
+- Measures to prevent unauthorized access
+
+Transcripts containing PII can be anonymized, redacted, or pseudonymized upon request. Specify your requirements in the order notes field.
+
+## Secure File Transfer
+
+Files are submitted through a secure, encrypted web portal. We do not accept recordings via standard email. For clients with specific institutional requirements (SFTP, Box Enterprise, SharePoint, or other approved protocols), alternative secure transfer arrangements can be arranged.
+
+## No AI Training on Client Data
+
+Qualtranscribe does not use client recordings or transcripts to train AI models, across all plans and all service types. AssemblyAI (Instant Draft) and Anthropic via AWS Bedrock (Smart Insights) also do not use submitted content for model training. This is a firm commitment, not a policy that changes by tier.
+
+## Regional Data Residency
+
+| Account Region | File Storage | AI Processing |
+|---|---|---|
+| United States | Wasabi us-east-1, N. Virginia | AssemblyAI US, AWS Bedrock US |
+| European Union | Wasabi eu-central-2, Frankfurt | AssemblyAI EU, AWS Bedrock EU |
+
+EU account data never leaves the EEA for storage or AI processing purposes.
+
+## US-Only Processing
+
+For clients with institutional requirements, IRB restrictions, or legal obligations that prohibit international data transfer, US-Only processing is available. Under this option:
+
+- All transcription is performed exclusively by US-based professionals
+- No files are transferred to international subcontractors
+- All storage and AI processing remain within the United States
+
+Specify US-Only when placing an order, or contact support to configure it as the default for your account.
+
+## Regulatory Compliance
+
+| Framework | Status |
+|---|---|
+| HIPAA | Compliant; BAAs available |
+| GDPR | Compliant; DPAs available |
+| CCPA | Compliant |
+| IRB data management requirements | Documentable; compliance documentation available on request |
+| PII protection protocols | Implemented per US DOL guidance |
+
+## Data Deletion
+
+Files are permanently deleted 30 days after project delivery. The deletion process:
+
+1. Data removed from active systems
+2. Removed from backups
+3. Overwritten using industry-standard methods
+4. Verified as completely erased
+
+Earlier deletion is available on request and is processed within five business days. A Certificate of Destruction is available upon request.
+
+## Incident Response
+
+**For HIPAA-covered projects:** Covered entities are notified within 24 hours of a confirmed breach.
+
+**For GDPR-covered projects:** The relevant supervisory authority is notified within 72 hours. Affected clients are notified without undue delay.
+
+For all accounts: we investigate immediately, contain the breach, provide full documentation of what occurred, and offer appropriate support throughout the notification process.
+
+## Documentation for Compliance Submissions
+
+We provide written documentation of our security practices, BAA and DPA availability, data deletion policies, no-AI-training commitment, and subprocessor arrangements for inclusion in:
+
+- IRB data management plans
+- HIPAA risk assessments
+- GDPR ethics submissions
+- Institutional vendor security reviews (including HECVAT forms)
+- Grant compliance documentation
+
+Contact support@qualtranscribe.com to request documentation formatted for your specific submission requirements.
