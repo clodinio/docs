@@ -77,11 +77,31 @@
             ]
           },
           {
-            "group": "Orders & Billing",
+            "group": "Use Cases",
+            "pages": [
+              "use-cases/legal-transcription",
+              "use-cases/healthcare-transcription",
+              "use-cases/academic-transcription",
+              "use-cases/market-research",
+              "use-cases/multilingual"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/verbatim-styles",
+              "guides/nvivo-atlas",
+              "guides/anonymization",
+              "guides/preparing-recordings"
+            ]
+          },
+          {
+            "group": "Billing",
             "pages": [
               "billing/placing-an-order",
               "billing/pricing",
               "billing/payment-methods",
+              "billing/refunds",
               "billing/order-history"
             ]
           },
@@ -91,6 +111,15 @@
               "account/settings",
               "account/security",
               "account/hipaa"
+            ]
+          },
+          {
+            "group": "Compliance",
+            "pages": [
+              "compliance/qualshield",
+              "compliance/gdpr",
+              "compliance/irb",
+              "compliance/data-retention"
             ]
           }
         ]
