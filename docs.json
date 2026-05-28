@@ -128,5 +128,8 @@
   },
   "footerSocials": {
     "website": "https://qualtranscribe.com"
+  },
+  "metadata": {
+    "timestamp": false
   }
 }
