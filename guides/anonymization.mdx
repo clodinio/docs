@@ -1,1 +1,61 @@
+---
+title: Anonymization and Redaction
+description: How Qualtranscribe handles anonymization, pseudonymization, redaction, and de-identification of transcripts for research, healthcare, and legal use.
+---
 
+# Anonymization and Redaction
+
+Qualtranscribe provides anonymization, pseudonymization, and redaction services for transcripts containing Personally Identifiable Information (PII) or Protected Health Information (PHI). These services are available as add-ons to any Human Transcription order.
+
+## The Three Approaches
+
+**De-identification** removes explicit personal identifiers from the transcript. Names, specific job titles, locations, phone numbers, and other direct identifiers are removed or replaced with neutral placeholders. The resulting transcript cannot be directly linked to a named individual, though some re-identification risk may remain from contextual information.
+
+Use when: sharing transcripts internally with team members who do not need participant identity, early-stage research review, internal reporting.
+
+**Anonymization** goes further. All identifiers are removed and there is no mapping key that could link the transcript back to the participant. This is a one-way process; once anonymized, the transcript cannot be re-identified even by the research team.
+
+Use when: publishing data, sharing with external reviewers, submitting to data repositories, completing studies where follow-up is not needed.
+
+**Pseudonymization** replaces identifying details with codes or pseudonyms (Participant 101, P-A, Respondent B) while retaining a separate, secure mapping key that links codes to real identities. This protects participant identity from anyone who sees the transcript, while preserving the ability to re-contact participants or cross-reference data.
+
+Use when: longitudinal studies, clinical trials, research requiring follow-up interviews, or any project where you need to track individual participants across multiple sessions.
+
+## What We Can Remove or Replace
+
+- Participant names
+- Names of other individuals mentioned in the recording
+- Employer and organizational names
+- Geographic locations (city, neighborhood, specific address)
+- Phone numbers and email addresses
+- Medical record numbers and patient identifiers
+- Dates that could identify a participant when combined with other information
+- Professional titles and job descriptions when these would identify an individual
+- Any other identifiers you specify
+
+## How to Request
+
+Specify your anonymization or redaction requirements in the order notes field when placing your order. Be as specific as possible:
+
+- State whether you need de-identification, pseudonymization, or full anonymization
+- List any specific identifiers you know are present (e.g., participant named John Smith, works at Pfizer, based in Chicago)
+- Provide any pseudonymization codes if you want us to use your existing system (e.g., Participant IDs from your research management database)
+- Note whether you need a mapping key delivered separately
+
+## Research Considerations
+
+**IRB implications.** Your IRB protocol should specify how participant data will be anonymized and at what stage of the research process. Qualtranscribe anonymization counts as a research procedure; include it in your data management plan.
+
+**Publication requirements.** Most journals require that published qualitative data be anonymized. A transcript anonymized at the source by your transcription provider is cleaner than one edited after the fact by the researcher.
+
+**The limits of de-identification.** Recent research has shown that de-identified text from clinical and research settings can carry significant re-identification risk through indirect identifiers (references to specific events, combinations of demographic characteristics, distinctive speech patterns). For high-sensitivity research involving vulnerable populations, discuss your anonymization requirements with your IRB or data protection officer before specifying an approach.
+
+## HIPAA De-Identification Methods
+
+For healthcare research, HIPAA recognizes two approaches to de-identification:
+
+**Safe Harbor:** Removal of all 18 specified PHI identifiers (names, dates other than year, geographic units smaller than state, and 15 others).
+
+**Expert Determination:** A qualified expert applies statistical or scientific methods to confirm that re-identification risk is very small.
+
+Qualtranscribe applies Safe Harbor de-identification by default for healthcare transcripts unless you specify otherwise. For expert determination, consult your institution's privacy officer.
