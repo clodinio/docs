@@ -109,8 +109,7 @@
             "group": "Account",
             "pages": [
               "account/settings",
-              "account/security",
-              "account/hipaa"
+              "account/security"
             ]
           },
           {
@@ -119,7 +118,8 @@
               "compliance/qualshield",
               "compliance/gdpr",
               "compliance/irb",
-              "compliance/data-retention"
+              "compliance/data-retention",
+              "account/hipaa"
             ]
           }
         ]
@@ -128,8 +128,5 @@
   },
   "footerSocials": {
     "website": "https://qualtranscribe.com"
-  },
-  "metadata": {
-    "timestamp": false
   }
 }
