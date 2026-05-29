@@ -119,7 +119,7 @@
               "compliance/gdpr",
               "compliance/irb",
               "compliance/data-retention",
-              "account/hipaa"
+              "compliance/hipaa"
             ]
           }
         ]
