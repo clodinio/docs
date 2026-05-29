@@ -1,0 +1,99 @@
+---
+title: HIPAA Compliance
+description: Qualtranscribe's HIPAA-compliant transcription workflows, PHI handling practices, Business Associate Agreements, and healthcare research support.
+---
+
+# HIPAA Compliance
+
+Qualtranscribe maintains HIPAA-compliant workflows for transcription services involving Protected Health Information (PHI). This covers clinical research, patient interviews, healthcare provider interviews, behavioral health sessions, and any transcription work where participant data constitutes PHI under the Health Insurance Portability and Accountability Act.
+
+## Technical Safeguards
+
+- 256-bit AES encryption for PHI at rest
+- TLS 1.3 encryption for all PHI in transit
+- Multi-factor authentication and role-based access controls on all systems accessing PHI
+- Encrypted, password-protected workstations required for all staff handling PHI
+- Automated session timeouts and secure login protocols
+- Comprehensive audit logs tracking all PHI access with user ID, timestamp, and action type
+- Automatic access revocation upon project completion
+
+## File Transfer and Storage
+
+PHI is submitted through a secure, encrypted web portal. We do not accept PHI via standard email, text message, or unsecured file-sharing services.
+
+PHI is stored on HIPAA-compliant infrastructure provided by Wasabi Technologies in the us-east-1 region (North Virginia). PHI never leaves the United States for storage or processing purposes.
+
+Clients requiring alternative secure transfer methods (SFTP, Box Enterprise, SharePoint, or other approved protocols) should contact support to arrange this.
+
+## AI Features and PHI
+
+Qualtranscribe offers optional AI-powered features that involve third-party processing:
+
+**Instant Draft:** Audio submitted via Instant Draft is transmitted to AssemblyAI's US-hosted processing endpoints for HIPAA-active accounts. AssemblyAI is engaged under a Business Associate Agreement. Audio is deleted from AssemblyAI's systems upon transcript completion.
+
+**Smart Insights:** Transcript text is processed using Anthropic Claude accessed via AWS Bedrock. AWS Bedrock is engaged under a Business Associate Agreement. Content processed through Smart Insights remains within HIPAA-compliant infrastructure and is not used for model training.
+
+Clients who require that no AI tools process their PHI should select Human Transcription only and must not use Instant Draft or Smart Insights. Both features are clearly labeled within the platform.
+
+## Business Associate Agreements
+
+Qualtranscribe enters into Business Associate Agreements with all covered entities prior to service initiation. A BAA must be executed before any PHI is shared with us. BAAs confirm our compliance obligations and outline our responsibilities for PHI handling under HIPAA.
+
+To request a BAA: contact support@qualtranscribe.com.
+
+## Data Retention and Deletion
+
+PHI is retained only for the time necessary to fulfill the transcription request and complete quality assurance. Retention periods are configurable under account settings (HIPAA & Compliance), with options from 30 days (default) through 60, 90, 180 days, 1 year, or never (manual deletion). Earlier deletion is available on request and is processed within five business days.
+
+Once deleted, data is removed from active systems and backups, overwritten using industry-standard methods, and verified as completely erased. A Certificate of Destruction is available upon request.
+
+## Transcriptionist Qualifications
+
+All staff and subcontractors involved in HIPAA-covered transcription:
+
+- Complete comprehensive HIPAA training upon engagement and regularly thereafter
+- Operate under signed Business Associate Agreements
+- Are prohibited from accessing PHI in public locations or on shared devices
+- Follow identical security protocols regardless of geographic location
+
+## Geographic Operations
+
+Qualtranscribe works with a global network of transcriptionists. For HIPAA-covered projects, two service configurations are available:
+
+**Standard Service:** Transcription may be assigned to qualified professionals in any approved location (United States, Canada, United Kingdom, and EMEA). All subcontractors operate under signed BAAs and follow identical HIPAA-compliant protocols.
+
+**US-Only Service:** All transcription is performed exclusively by US-based professionals with no international data transfer. All file storage and AI processing remain within the United States. Specify US-Only when placing your order if required by your institution, IRB, or federal funding terms.
+
+## Breach Notification
+
+In the event of a breach involving unsecured PHI, Qualtranscribe will:
+
+- Immediately investigate and contain the breach
+- Notify the affected covered entity within 24 hours of the breach being confirmed
+- Provide detailed documentation of the breach, categories of data affected, and remediation steps
+- Report to relevant authorities as required under HIPAA breach notification rules
+
+## IRB Documentation
+
+For researchers using Qualtranscribe in IRB-approved studies, we provide documentation of our security practices, BAA availability, data deletion policies, and no-AI-training commitment for inclusion in data management plans and ethics submissions. Contact support for documentation suitable for your IRB.
+
+## Compliance Responsibility
+
+Qualtranscribe provides HIPAA-ready infrastructure and workflows. Compliance is a shared responsibility. As the data controller, your organization is responsible for:
+
+- Ensuring participant consent covers the transcription process and any third-party handling of recordings
+- Minimizing PHI in recordings where possible before submission
+- Managing access credentials and account security
+- Reviewing completed transcripts within the designated access period
+- Downloading and securely storing transcripts in your own infrastructure
+
+<Warning>
+  Qualtranscribe provides HIPAA-ready infrastructure but this documentation does not constitute legal advice and cannot guarantee compliance for your specific use case. Consult your institution's compliance officer or legal counsel for guidance on your organization's specific HIPAA obligations.
+</Warning>
+
+## Contact
+
+For HIPAA-related questions, BAA requests, or to discuss healthcare transcription requirements:
+
+Email: support@qualtranscribe.com
+Phone: 617-351-8271
