@@ -1,5 +1,10 @@
 {
   "name": "Qualtranscribe",
+  "seo": {
+    "metatags": {
+      "google-site-verification": "googlea021d7a49a7674bf"
+    }
+  },
   "theme": "mint",
   "logo": {
     "light": "/logo/light.png",
@@ -35,7 +40,11 @@
         "groups": [
           {
             "group": "Getting Started",
-            "pages": ["introduction", "quickstart", "faq"]
+            "pages": [
+              "introduction",
+              "quickstart",
+              "faq"
+            ]
           },
           {
             "group": "Transcription",
