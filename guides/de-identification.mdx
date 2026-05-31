@@ -1,78 +1,38 @@
 ---
-title: "De-Identification and Redaction"
-description: "Qualtranscribe provides anonymization, de-identification, and redaction services for transcripts containing Personally Identifiable Information (PII) or Protected Health Information (PHI). These services are available as add-ons to any Human Transcription order."
+title: "Transcript De-identification and Redaction"
+description: "Professional transcript de-identification and redaction services for research, healthcare, and legal transcription. Remove PII and PHI from Human Transcription and Instant Draft outputs."
 ---
 
-## The Three Approaches
+# Transcript De-identification and Redaction
 
-**De-identification** removes explicit personal identifiers from the transcript. Names, specific job titles, locations, phone numbers, and other direct identifiers are removed or replaced with neutral placeholders. The resulting transcript cannot be directly linked to a named individual, though some re-identification risk may remain from contextual information.
+Professional transcript de-identification and redaction services for research, healthcare, and legal transcription. Qualtranscribe removes or replaces Personally Identifiable Information (PII) and Protected Health Information (PHI) from completed transcripts, including names, locations, organizations, and other identifying details.
 
-Use when: sharing transcripts internally with team members who do not need participant identity, early-stage research review, internal reporting.
+## The Two Approaches
 
-**Anonymization** goes further. All identifiers are removed and there is no mapping key that could link the transcript back to the participant. This is a one-way process; once anonymized, the transcript cannot be re-identified even by the research team.
+**De-identification** removes explicit personal identifiers from the transcript, replacing them with neutral placeholders. The resulting transcript cannot be directly linked to a named individual.
 
-Use when: publishing data, sharing with external reviewers, submitting to data repositories, completing studies where follow-up is not needed.
+Use when: sharing transcripts internally, early-stage research review, internal reporting, or any project where participant identity does not need to be retained.
 
-**Pseudonymization** replaces identifying details with codes or pseudonyms (Participant 101, P-A, Respondent B) while retaining a separate, secure mapping key that links codes to real identities. This protects participant identity from anyone who sees the transcript, while preserving the ability to re-contact participants or cross-reference data.
+**Redaction** masks or removes specific identified content from the transcript. Redaction can be applied selectively — removing only the identifiers you specify while leaving the rest of the transcript intact.
 
-Use when: longitudinal studies, clinical trials, research requiring follow-up interviews, or any project where you need to track individual participants across multiple sessions.
+Use when: legal proceedings, regulatory submissions, HIPAA compliance workflows, or projects with specific institutional redaction requirements.
 
-## What We Can Remove or Replace
+## What We Remove or Replace
 
-- Participant names
-- Names of other individuals mentioned in the recording
-- Employer and organizational names
-- Geographic locations (city, neighborhood, specific address)
-- Phone numbers and email addresses
-- Medical record numbers and patient identifiers
-- Dates that could identify a participant when combined with other information
-- Professional titles and job descriptions when these would identify an individual
+- Names of people — replaced with `[name]`, or specific where relevant: `[child's name]`, `[sibling]`, `[parent]`
+- Cities, states, and countries — replaced with `[city]`, `[state]`, `[country]`
+- Businesses or places of work — replaced with `[local business]`, `[restaurant]`, `[shopping center]`
+- Hospitals or clinics — replaced with `[hospital]`, `[clinic]`
+- Doctors and clinicians — replaced with `[doctor]`, `[therapist]`, `[nurse]`
 - Any other identifiers you specify
 
-## How to Request
+Drug names, treatment names, and clinical terminology are never redacted unless explicitly requested.
 
-Specify your anonymization or redaction requirements in the order notes field when placing your order. Be as specific as possible:
+## HIPAA Redaction Format
 
-- State whether you need de-identification, pseudonymization, or full anonymization
-- List any specific identifiers you know are present (e.g., participant named John Smith, works at Pfizer, based in Chicago)
-- Provide any pseudonymization codes if you want us to use your existing system (e.g., Participant IDs from your research management database)
-- Note whether you need a mapping key delivered separately
-
-## Research Considerations
-
-**IRB implications.** Your IRB protocol should specify how participant data will be anonymized and at what stage of the research process. Qualtranscribe anonymization counts as a research procedure; include it in your data management plan.
-
-**Publication requirements.** Most journals require that published qualitative data be anonymized. A transcript anonymized at the source by your transcription provider is cleaner than one edited after the fact by the researcher.
-
-**The limits of de-identification.** Recent research has shown that de-identified text from clinical and research settings can carry significant re-identification risk through indirect identifiers (references to specific events, combinations of demographic characteristics, distinctive speech patterns). For high-sensitivity research involving vulnerable populations, discuss your anonymization requirements with your IRB or data protection officer before specifying an approach.
-
-## HIPAA De-Identification Methods
-
-For healthcare research, HIPAA recognizes two approaches to de-identification:
-
-**Safe Harbor:** Removal of all 18 specified PHI identifiers (names, dates other than year, geographic units smaller than state, and 15 others).
-
-**Expert Determination:** A qualified expert applies statistical or scientific methods to confirm that re-identification risk is very small.
-
-Qualtranscribe applies Safe Harbor de-identification by default for healthcare transcripts unless you specify otherwise. For expert determination, consult your institution's privacy officer.
-
-## HIPAA Redaction Conventions
-
-For clinical and healthcare transcripts, we follow a structured redaction format that preserves readability while removing all identifiable information. Drug names, treatment names, and medical terminology are retained.
+For clinical and healthcare transcripts, we follow a structured redaction format that includes the identifier type and timestamp for full auditability:
 
 **Format:** `[PHI: descriptor timestamp]`
-
-**What gets redacted and how:**
-
-| Identifier | Replacement Format |
-| --- | --- |
-| Names of people | `[name]`, or specific where relevant: `[child's name]`, `[sibling]`, `[parent]` |
-| Cities, states, countries | `[city]`, `[state]`, `[country]` |
-| Businesses or places of work | `[local business]`, `[restaurant]`, `[shopping center]` |
-| Hospitals or clinics | `[hospital]`, `[clinic]` |
-| Doctors and clinicians | `[doctor]`, `[therapist]`, `[nurse]` |
-
-Drug names, treatment names, and clinical terminology are **not** redacted.
 
 **Example:**
 
@@ -80,4 +40,88 @@ Original: _"So my daughter Sarah was seen at Boston Children's last Tuesday by D
 
 Redacted: _"So my \[PHI: child's name 00:05:15\] was seen at \[PHI: hospital 00:05:18\] last Tuesday by \[PHI: doctor 00:05:21\], who referred her to the \[PHI: clinic 00:05:25\] on \[PHI: street 00:05:27\]."_
 
-Specify this redaction format in your order notes if required for your project.
+## How to Request
+
+Specify your de-identification or redaction requirements in the **order notes** field when placing your Human Transcription order, or during project discussions with your project manager. Include:
+
+- The approach required (de-identification or redaction)
+- Any specific identifiers you know are present
+- The replacement format you prefer, or specify HIPAA format if applicable
+
+## HIPAA De-identification Standards
+
+For healthcare research, HIPAA's Safe Harbor method requires removal of all 18 specified PHI identifiers:
+
+| # | Identifier |
+| --- | --- |
+| 1 | Names |
+| 2 | Geographic data smaller than state (street address, city, zip code) |
+| 3 | Dates (other than year) directly related to an individual |
+| 4 | Phone numbers |
+| 5 | Fax numbers |
+| 6 | Email addresses |
+| 7 | Social security numbers |
+| 8 | Medical record numbers |
+| 9 | Health plan beneficiary numbers |
+| 10 | Account numbers |
+| 11 | Certificate and license numbers |
+| 12 | Vehicle identifiers and serial numbers |
+| 13 | Device identifiers and serial numbers |
+| 14 | Web URLs |
+| 15 | IP addresses |
+| 16 | Biometric identifiers (finger and voice prints) |
+| 17 | Full-face photographs and comparable images |
+| 18 | Any other unique identifying number or code |
+
+Qualtranscribe applies Safe Harbor de-identification by default for healthcare transcripts unless you specify otherwise.
+
+---
+
+## PII Redaction for Instant Draft (AI Transcription)
+
+Instant Draft includes a built-in PII Redaction feature that automatically detects and redacts personally identifiable information directly from your transcript during processing. To enable it, select **Anonymize** in the Instant Draft options at checkout.
+
+### How It Works
+
+When PII Redaction is enabled, identified personal information is replaced in the transcript using one of two substitution methods:
+
+**Hash substitution** replaces PII with `####`:
+
+> _"Hi, my name is ####!"_
+
+**Entity name substitution** replaces PII with a labeled placeholder:
+
+> _"Hi, my name is \[PERSON\_NAME\]!"_
+
+Select your preferred substitution method when enabling the feature.
+
+### Supported Languages
+
+PII Redaction for Instant Draft is available in the following languages:
+
+|  |  |  |
+| --- | --- | --- |
+| Afrikaans | German | Latvian |
+| Arabic | Global English | Lithuanian |
+| Belarusian | Australian English | Luxembourgish |
+| Bulgarian | British English | Malay |
+| Burmese | US English | Norwegian |
+| Catalan | Greek | Persian |
+| Chinese | Hebrew | Polish |
+| Croatian | Hindi | Portuguese |
+| Czech | Hungarian | Romanian |
+| Danish | Icelandic | Russian |
+| Dutch | Indonesian | Slovak |
+| Estonian | Italian | Slovenian |
+| Finnish | Japanese | Spanish |
+| French | Khmer | Swahili |
+| Georgian | Korean | Swedish |
+|  |  | Tagalog |
+|  |  | Tamil |
+|  |  | Turkish |
+|  |  | Ukrainian |
+|  |  | Vietnamese |
+
+<Note>
+  PII Redaction for Instant Draft is only available for the languages listed above. For other languages, use Human Transcription with redaction specified in your order notes.
+</Note>
